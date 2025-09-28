@@ -4,6 +4,9 @@ theme: hugobricks
 defaultContentLanguage: en
 assetDir: static
 
+relativeURLs: true
+canonifyURLs: true
+
 disableKinds:
   - taxonomy
   - term
@@ -42,6 +45,3 @@ languages:
 caches:
   images:
     dir: :cacheDir/images
-
-relativeURLs = true
-canonifyURLs = true
