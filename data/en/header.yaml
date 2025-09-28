@@ -1,0 +1,16 @@
+logo_image:
+logo_subtitle:
+dark_header: false
+mobile_view_width: 1100
+menuitems:
+  - title: Mission
+    link: /mission/
+  - title: About
+    link: /about/
+  - title: Contact
+    link: /contact/
+cta:
+  active: true
+  title: Get started
+  link: /get-started/
+preheader: open Mon-Fri from 9-5
