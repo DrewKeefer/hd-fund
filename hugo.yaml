@@ -1,4 +1,4 @@
-baseURL: 'https://drewkeefer.github.io/hd-fund/'
+baseURL: "https://drewkeefer.github.io/hd-fund/"
 title: Huntington's Disease Fund
 theme: hugobricks
 defaultContentLanguage: en
@@ -42,3 +42,6 @@ languages:
 caches:
   images:
     dir: :cacheDir/images
+
+relativeURLs = true
+canonifyURLs = true
