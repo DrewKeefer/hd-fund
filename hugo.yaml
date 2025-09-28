@@ -38,3 +38,7 @@ languages:
         posts: /blog/
         services: /services/
         products: /webshop/
+
+caches:
+  images:
+    dir: :cacheDir/images
