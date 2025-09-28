@@ -2,40 +2,40 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>//localhost:1313/about/</loc>
+    <loc>example.com/about/</loc>
   </url><url>
-    <loc>//localhost:1313/bricks/blocks/</loc>
+    <loc>example.com/bricks/blocks/</loc>
   </url><url>
-    <loc>//localhost:1313/bricks/</loc>
+    <loc>example.com/bricks/</loc>
   </url><url>
-    <loc>//localhost:1313/bricks/cart/</loc>
+    <loc>example.com/bricks/cart/</loc>
   </url><url>
-    <loc>//localhost:1313/bricks/checkout/</loc>
+    <loc>example.com/bricks/checkout/</loc>
   </url><url>
-    <loc>//localhost:1313/contact/</loc>
+    <loc>example.com/contact/</loc>
   </url><url>
-    <loc>//localhost:1313/bricks/cta/</loc>
+    <loc>example.com/bricks/cta/</loc>
   </url><url>
-    <loc>//localhost:1313/bricks/features/</loc>
+    <loc>example.com/bricks/features/</loc>
   </url><url>
-    <loc>//localhost:1313/</loc>
+    <loc>example.com/</loc>
   </url><url>
-    <loc>//localhost:1313/bricks/intro/</loc>
+    <loc>example.com/bricks/intro/</loc>
   </url><url>
-    <loc>//localhost:1313/bricks/map/</loc>
+    <loc>example.com/bricks/map/</loc>
   </url><url>
-    <loc>//localhost:1313/mission/</loc>
+    <loc>example.com/mission/</loc>
   </url><url>
-    <loc>//localhost:1313/404/</loc>
+    <loc>example.com/404/</loc>
   </url><url>
-    <loc>//localhost:1313/bricks/payment/</loc>
+    <loc>example.com/bricks/payment/</loc>
   </url><url>
-    <loc>//localhost:1313/bricks/prices/</loc>
+    <loc>example.com/bricks/prices/</loc>
   </url><url>
-    <loc>//localhost:1313/bricks/quote/</loc>
+    <loc>example.com/bricks/quote/</loc>
   </url><url>
-    <loc>//localhost:1313/bricks/reviews/</loc>
+    <loc>example.com/bricks/reviews/</loc>
   </url><url>
-    <loc>//localhost:1313/bricks/webshop/</loc>
+    <loc>example.com/bricks/webshop/</loc>
   </url>
 </urlset>
