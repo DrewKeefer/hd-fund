@@ -18,7 +18,7 @@ This is more than just a medical breakthrough. It's the first spark of real hope
 ### We refuse to let that happen. And with your help, we won't.
 
 
-![](/uploads/photos/grad4.jpg)
+![](/uploads/photos/copy_logo.png)
 
 {{< /brick_image>}}
 
