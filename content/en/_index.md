@@ -18,7 +18,8 @@ This is more than just a medical breakthrough. It's the first spark of real hope
 ### We refuse to let that happen. And with your help, we won't.
 
 
-![](/uploads/photos/copy_logo.png)
+![](/photos/grad1.jpg)
+![](/grad3.jpg)
 
 {{< /brick_image>}}
 
@@ -30,7 +31,7 @@ This is more than just a medical breakthrough. It's the first spark of real hope
 This is more than just a medical breakthrough. It's the first spark of real hope for a community that has suffered in silence. But hope alone isn't enough. We are still years away from this becoming a treatment available to the public - and without urgent investment, that hope could be delayed or denied for many.
 
 
-![](/uploads/photos/grad1.jpg)
+![](/photos/grad1.jpg)
 
 
 
