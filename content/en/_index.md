@@ -1,13 +1,15 @@
 ---
 title: Home
 ---
-{{< brick_intro>}}
+{{< brick_title2 >}}
 
 # Because everyone deserves the chance to live.
 
 For generations, families affected by Huntington's Disease have lived with a heartbreaking reality -- but for the first time in history, that may be changing.
 
-{{< /brick_intro>}}
+![](/uploads/bracket_png.png)
+
+{{< /brick_title2 >}}
 
 {{< brick_image>}}
 

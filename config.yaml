@@ -2,8 +2,8 @@ baseURL: "https://drewkeefer.github.io/hd-fund/"
 title: Huntington's Disease Fund
 theme: hugobricks
 defaultContentLanguage: en
+assetDir: static
 
-relativeURLs: true
 canonifyURLs: true
 
 disableKinds:
