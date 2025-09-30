@@ -8,14 +8,19 @@
 /*------------------------*/
 
 :root {
-    --textDarker: #181a18;
-    --textDark: rgba(24, 26, 24, 1);
-    --textMedium: rgba(24, 26, 24, 0.7);
-    --borderMedium: rgba(24, 26, 24, 0.2); 
-    --borderLight: rgba(24, 26, 24, 0.075);
-    --accent: #036242;
-    --accentDarker: #012f1f;
-    --light: rgba(24, 26, 24, 0.035);
+    --textDarker: #111212;
+    --textDark: rgba(17, 18, 18, 1);
+    --textMedium: rgba(17, 18, 18, 0.7);
+    --borderMedium: rgba(17, 18, 18, 0.2); 
+    --borderLight: rgba(17, 18, 18, 0.075);
+    --accent: #3f8c5f;
+    --accentDarker: #215e45;
+    --light: rgba(17, 18, 18, 0.035);
+    --colorDark: #111212;
+    --darkGreen: #215e45;
+    --lightGreen: #3f8c5f;
+    --colorTan: #f2ecda;
+    --colorYellow: #f2d855;
 }
 /*------------------------*/
 /* turn grayscale off
@@ -51,7 +56,7 @@ img {filter: grayscale(0);}
 /*------------------------ CSS overrides below ------------------------*/
 
 .intro{
-    background-color: #f3ebd6;
+    background-color: var(--colorTan);
 }
 
 .intro .container.small{
