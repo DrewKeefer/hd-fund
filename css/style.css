@@ -33,7 +33,7 @@ img {filter: grayscale(0);}
 /* black_2_textDark
 /*------------------------*/
 
-.map:not(section)::after, .black_2_textDark {filter: contrast(0.7) sepia(1) hue-rotate(160deg)!important;}
+.map:not(section)::after, .black_2_textDark {filter: grayscale(100%);}
 
 /*------------------------*/
 /* black_2_textMedium
@@ -49,8 +49,3 @@ img {filter: grayscale(0);}
 
 
 /*------------------------ CSS overrides below ------------------------*/
-
-.tabs > li{
-    text-align: center;
-    width: 100%;
-}
