@@ -13,8 +13,8 @@
     --textMedium: rgba(24, 26, 24, 0.7);
     --borderMedium: rgba(24, 26, 24, 0.2); 
     --borderLight: rgba(24, 26, 24, 0.075);
-    --accent: #bfbdb5;
-    --accentDarker: #595753;
+    --accent: #036242;
+    --accentDarker: #012f1f;
     --light: rgba(24, 26, 24, 0.035);
 }
 /*------------------------*/
@@ -51,9 +51,12 @@ img {filter: grayscale(0);}
 /*------------------------ CSS overrides below ------------------------*/
 
 .intro{
-    background-color: #f2f0e6;
+    background-color: #f3ebd6;
 }
 
+.intro .container.small{
+    max-width: 60rem;
+}
 
 .tabs > li{
     text-align: center;

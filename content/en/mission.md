@@ -12,23 +12,13 @@ This fund will be managed and governed by experts by experience — people who h
 {{< /brick_title>}}
 
 
-{{< brick_image2>}}
+{{< brick_intro >}}
 
-![](/uploads/logo_png.png)
-### Your donation will be channelled into three vital areas:
-
-1. Funding medical research
-2. Removing financial barriers to access
-3. Supporting charities that support families
-
-
-{{< /brick_image2>}}
-
-
-
-{{< brick_wide >}}
+## Your donation will be channelled into three vital areas:
 
 {{< tabs >}}
+
+
 ## Funding Research
 
 A cure may be on the horizon, but the journey from discovery to delivery is long and expensive. We will invest in continued research to speed up access to safe, effective treatments — and ultimately, a cure that reaches the people who need it most.
@@ -49,4 +39,4 @@ The emotional and financial cost of Huntington's Disease doesn't disappear overn
 
 {{< /tabs >}}
 
-{{< /brick_wide >}}
+{{< /brick_intro >}}
