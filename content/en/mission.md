@@ -1,7 +1,6 @@
 ---
 title: Our Strategy
 dark_header: true
-color_name: strategy
 ---
 {{< brick_title>}}
 
@@ -11,32 +10,29 @@ This fund will be managed and governed by experts by experience — people who h
 
 {{< /brick_title>}}
 
-
-{{< brick_intro >}}
+{{< brick_features>}}
 
 ## Your donation will be channelled into three vital areas:
 
-{{< tabs >}}
-
-
-## Funding Research
+---
+![](/uploads/branding/square_logo.svg)
+### Funding Research
 
 A cure may be on the horizon, but the journey from discovery to delivery is long and expensive. We will invest in continued research to speed up access to safe, effective treatments — and ultimately, a cure that reaches the people who need it most.
 
 ---
-
-## Financial Access
+![](/uploads/branding/abv_logo.svg)
+### Financial Access
 
 When - not if — a cure becomes publicly available, it won't come cheap. For families already burdened with the financial strain of care, loss, and medical costs, the price of a lifesaving treatment could be out of reach.
 We will make sure they are not priced out of hope.
 
 
 ---
-
-## Supporting Charities
+![](/uploads/branding/square_logo.svg)
+### Supporting Charities
 
 The emotional and financial cost of Huntington's Disease doesn't disappear overnight. While we fight for the future, we must also care for those living with this illness right now. That's why we will also support trusted, frontline charities helping families survive today while they wait for tomorrow.
 
-{{< /tabs >}}
 
-{{< /brick_intro >}}
+{{< /brick_features>}}

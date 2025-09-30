@@ -8,14 +8,19 @@
 /*------------------------*/
 
 :root {
-    --textDarker: #181a18;
-    --textDark: rgba(24, 26, 24, 1);
-    --textMedium: rgba(24, 26, 24, 0.7);
-    --borderMedium: rgba(24, 26, 24, 0.2); 
-    --borderLight: rgba(24, 26, 24, 0.075);
-    --accent: #036242;
-    --accentDarker: #012f1f;
-    --light: rgba(24, 26, 24, 0.035);
+    --textDarker: #111212;
+    --textDark: rgba(17, 18, 18, 1);
+    --textMedium: rgba(17, 18, 18, 0.7);
+    --borderMedium: rgba(17, 18, 18, 0.2); 
+    --borderLight: rgba(17, 18, 18, 0.075);
+    --accent: #3f8c5f;
+    --accentDarker: #215e45;
+    --light: rgba(17, 18, 18, 0.035);
+    --colorDark: #111212;
+    --darkGreen: #215e45;
+    --lightGreen: #3f8c5f;
+    --colorTan: #f2ecda;
+    --colorYellow: #f2d855;
 }
 /*------------------------*/
 /* turn grayscale off
@@ -49,3 +54,81 @@ img {filter: grayscale(0);}
 
 
 /*------------------------ CSS overrides below ------------------------*/
+
+a.logo > div img.inline{
+    height: 3.5rem;
+    filter: none !important;
+}
+
+body.transparent_header header:not(.sticky) a.logo > div img.inline{
+    filter: grayscale(100%) brightness(0) invert(1) !important;
+}
+
+header.dark a.logo > div img.inline{
+    filter: grayscale(100%) brightness(0) invert(1) !important;
+}
+
+footer.dark a.logo > div img.inline{
+    filter: grayscale(100%) brightness(0) invert(1) !important;
+}
+
+.innerbody{
+    background: var(--colorTan);
+}
+
+header{
+    background: var(--colorTan);
+}
+
+header.sticky:not(.dark) {
+    background: var(--colorTan);
+}
+
+.tabs > li{
+    text-align: center;
+    width: 100%;
+}
+
+ul.features img{
+    filter: none !important;
+}
+
+ul.blocks li.hasimage div.img{
+    width: 100%;
+    border-radius: 0rem;;
+}
+
+ul.blocks li.hasimage div.img img{
+    object-fit: none;
+}
+
+ul.blocks li.hasimage a::before{
+    background: transparent;
+}
+
+ul.blocks a[href]:hover .img img {transform: scale(0.75);}
+
+ul.blocks li.hasimage:hover{
+    border: 0px;
+}
+
+ul.blocks li:has(a[href]):hover {border: 0px;}
+
+ul.blocks li a::after {
+    content: "";
+    width: 40%;
+    background: var(--colorYellow);
+    height: 0.25rem;
+    position: absolute;
+    left: 30%;
+    bottom: 42.5%;
+    transform: scaleX(0) translateY(40%);
+    transition: transform 0.2s ease-in-out;
+}
+
+ul.blocks li a:hover::after,
+ul.blocks li.selected a::after {transform: scaleX(1) translateY(50%);}
+
+ul.blocks li.hasimage h3{
+    color: var(--colorDark)
+}
