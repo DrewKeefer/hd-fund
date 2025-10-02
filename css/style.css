@@ -152,7 +152,7 @@ section.title h1::before{
     height: 150%;
     position: absolute;
     z-index: 10;
-    background-image: url('/uploads/branding/left_brace.svg'), url('/uploads/branding/right_brace.svg');
+    background-image: url('../uploads/branding/left_brace.svg'), url('../uploads/branding/right_brace.svg');
     background-position: left center, right center;
     background-repeat: no-repeat, no-repeat;
 }
