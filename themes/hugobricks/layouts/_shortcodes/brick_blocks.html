@@ -66,5 +66,16 @@ Start with the end result.
 {{< /brick_blocks >}}
     
 */}}
+
+{{/*
+  Shortcode wrapper for the partial.
+  Usage:
+    {{< brick_blocks class="CustomClass" id="block1" >}}
+    Optional Markdown content here
+    {{< /brick_blocks >}}
+*/}}
 -->
-{{- partial "brick_blocks.html" .Inner -}}
+
+{{- $params := dict "class" (.Get "class") "id" (.Get "id") "content" .Inner -}}
+{{- partial "brick_blocks.html" $params -}}
+

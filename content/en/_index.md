@@ -5,26 +5,38 @@ title: Home
 
 # Because everyone deserves the chance to live.
 
-For generations, families affected by Huntington's Disease have lived with a heartbreaking reality -- but for the first time in history, that may be changing.
+#### For generations, families living with Huntington’s Disease (HD) have faced a tragic reality: no treatment, no cure, and very little hope.  Now, that is beginning to change.  We are building something the HD community has never had before – a movement powered by action and the belief that together we can create a future without this disease.
 
-Host branch up to date
 
 {{< /brick_title>}}
 
-{{< brick_image2>}}
 
-### A potential cure for Huntington's Disease has been discovered.
+{{< brick_columntext class="introText">}}
 
-This is more than just a medical breakthrough. It's the first spark of real hope for a community that has suffered in silence. But hope alone isn't enough. We are still years away from this becoming a treatment available to the public - and without urgent investment, that hope could be delayed or denied for many.
+## About Huntington's Disease
 
-![](/uploads/branding/title_logo.svg)
+---
 
-### We refuse to let that happen. And with your help, we won't.
+ Huntington’s Disease is a progressive and fatal neurodegenerative disease.  Each child of an affected parent faces a fifty percent chance of carrying the gene mutation, which means the disease persists across multiple generations within the same family.  
+ 
+ Affected families not only bear the emotional weight of losing loved ones time and time again, but also the financial burden of living with the disease.  Families must manage the long term costs of medical care, the demands of becoming full time caretakers, and, ultimately, funeral expenses.  The difficulties of Huntington’s Disease are carried forward both emotionally and financially, impacting families for generations.
 
-{{< /brick_image2>}}
+
+{{< /brick_columntext >}}
+
+{{< brick_cta >}}{{< /brick_cta >}}
 
 
-{{< brick_blocks >}}
+
+{{< brick_wide >}}
+
+## Why We've Started the Huntington's Disease Fund
+
+For the first time, we are standing at the edge of a genuine scientific breakthrough.  Researchers are closer than ever to slowing, stopping, or even preventing the devastating impact of HD.  However, a cure on the shelf is not the same as a cure in the hands of affected families.  Too many will be left behind if we do not act now to make sure that treatment is accessible by need, rather than by wealth.
+
+{{< /brick_wide >}}
+
+{{< brick_blocks class="bracketBlocks">}}
 
 ---
 
@@ -37,17 +49,7 @@ This is more than just a medical breakthrough. It's the first spark of real hope
 [](/about/)
 ---
 ![](/uploads/branding/wide_brackets.svg)
-### Third Thing
-[](/404/)
+### Contact
+[](/contact/)
 
 {{< /brick_blocks >}}
-
-
-{{< brick_wide >}}
-# OUR STORY
-
-### Why We've Started the Huntington's Disease Fund
-
-This is more than just a medical breakthrough. It's the first spark of real hope for a community that has suffered in silence. But hope alone isn't enough. We are still years away from this becoming a treatment available to the public - and without urgent investment, that hope could be delayed or denied for many.
-
-{{< /brick_wide >}}

@@ -1,10 +1,10 @@
 ---
 title: cta
 ---
-## Get started with Hugobricks today!
+## Be part of the change.  Stand with the families who cannot wait another generation.
 
-Experience the future of web development with Hugo and stackable content bricks. Build lightning-fast static sites with ease and flexibility.
+This is more than a fundraiser–it is a turning point for the HD community.  Together we can transform despair into hope, and hope into actionable change.
 
-{{< button2 "Get started now" "/get-started/" >}}
+{{< button2 "Donate" "/donate/" >}}
 
-![](/uploads/illustrations/cuate/server.svg)
+![](/uploads/branding/title_logo.svg)

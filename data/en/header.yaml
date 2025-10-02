@@ -5,7 +5,7 @@ mobile_view_width: 1100
 menuitems:
   - title: Home
     link: /
-  - title: Mission
+  - title: Strategy
     link: /mission/
   - title: About
     link: /about/
@@ -13,6 +13,6 @@ menuitems:
     link: /contact/
 cta:
   active: true
-  title: Get started
-  link: /get-started/
+  title: Donate
+  link: /donate/
 preheader: open Mon-Fri from 9-5

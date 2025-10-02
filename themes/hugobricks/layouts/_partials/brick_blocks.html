@@ -1,13 +1,25 @@
+{{/*
+  Universal partial for a "brick block"
+  Accepts:
+    .class -> optional CSS class
+    .id    -> optional HTML id
+    .content -> Markdown content (optional)
+*/}}
 
-{{- $inner := . -}}
+{{- $class := .class | default "" -}}
+{{- $id := .id | default "" -}}
+{{- $inner := .content | default "" -}}
+
 {{- if or (eq $inner "") (eq $inner nil) -}}
-    {{- $inner = "Empty brick found. Consider creating a 'content/bricks/blocks.md' file." -}}
     {{- with page.Site.GetPage "bricks/blocks.md" -}}
         {{- $inner = .RawContent -}}
+    {{- else -}}
+        {{- $inner = "Empty brick found." -}}
     {{- end -}}
 {{- end -}}
+
 {{- $parts := split $inner "---" -}}
-<section class="blocks">
+<section class="blocks {{ $class }}" {{ if $id }}id="{{ $id }}"{{ end }}>
     <div class="container small">
         {{- markdownify (index $parts 0) -}}
     </div>
@@ -32,5 +44,3 @@
         </ul>
     </div>
 </section>
-
-
