@@ -55,6 +55,8 @@ img {filter: grayscale(0);}
 
 /*------------------------ CSS overrides below ------------------------*/
 
+/* Logo, Header, and Footer */
+
 a.logo > div img.inline{
     height: 3.5rem;
     filter: none !important;
@@ -93,7 +95,9 @@ ul.features img{
     filter: none !important;
 }
 
-ul.blocks li.hasimage div.img{
+/* Bracket Blocks */
+
+.bracketBlocks ul.blocks li.hasimage div.img{
     width: 100%;
     border-radius: 0rem;;
 }
@@ -131,4 +135,61 @@ ul.blocks li.selected a::after {transform: scaleX(1) translateY(50%);}
 
 ul.blocks li.hasimage h3{
     color: var(--colorDark)
+}
+
+/* Title Brackets */
+
+section.title h1{
+    position: relative;
+}
+
+section.title h1::before{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    content: "";
+    width: 150%;
+    height: 150%;
+    position: absolute;
+    z-index: 10;
+    background-image: url('/uploads/branding/left_brace.svg'), url('/uploads/branding/right_brace.svg');
+    background-position: left center, right center;
+    background-repeat: no-repeat, no-repeat;
+}
+
+body.mobilemenu section.title h1::before {
+    display: none;
+}
+
+/* Subtitle Text */
+
+section.title .container h4{
+    padding-top: 4rem;
+    text-align: justify;
+}
+
+/* Intro Text */
+
+.introText {
+    background-color: var(--darkGreen);
+    color: var(--colorTan);
+    container-type: inline-size;
+}
+
+.introText .column{
+    justify-content: start;
+}
+
+.introText .twocols{
+    grid-template-columns: 1fr 2fr;
+}
+
+@container (width < 50rem) {
+    .introText .twocols{
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    }
+}
+
+.introText h2{
+    color: var(--colorTan);
 }
