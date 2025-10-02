@@ -7,6 +7,8 @@ title: Home
 
 For generations, families affected by Huntington's Disease have lived with a heartbreaking reality -- but for the first time in history, that may be changing.
 
+Host branch up to date
+
 {{< /brick_title>}}
 
 {{< brick_image2>}}
