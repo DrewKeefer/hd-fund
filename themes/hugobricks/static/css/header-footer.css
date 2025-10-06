@@ -34,10 +34,10 @@ body:not(.transparent_header) .preheader.light .container a.icon img {filter: in
     from {transform: translateY(-7rem);}
     to {transform: translateY(0);}
 }
-header {position: absolute; background: white; z-index: 9; width: 100%; color: var(--textMedium);}
+header {position: absolute; background: var(--colorTan); z-index: 9; width: 100%; color: var(--textMedium);}
 body.transparent_header header {padding-top: 2.35rem;}
 header > .container {padding-top: 1.5rem; padding-bottom: 1.5rem; position: relative;}
-header.sticky {box-shadow: 0 0 0.5rem rgba(0,0,0,0.1); background: white; position: fixed; top: 0; padding-top: 0!important;}
+header.sticky {box-shadow: 0 0 0.5rem rgba(0,0,0,0.1); background: var(--colorTan); position: fixed; top: 0; padding-top: 0!important;}
 body:not(.mobilemenu) header.sticky  {animation: slidedown 1s ease-in-out;}
 header.sticky > .container {padding-top: 0.75rem; padding-bottom: 0.75rem;}
 header a {text-decoration: none;}
@@ -135,15 +135,30 @@ body.mobilemenu header .navnav.languages {display: none;}
 header.dark {background: var(--textDarker);}
 body.transparent_header header:not(.sticky) {background: transparent;}
 header.dark a.logo, body.transparent_header header:not(.sticky) a.logo,
-header.dark .navnav > ul > li > a, body.transparent_header header:not(.sticky) .navnav > ul > li > a {color: white;}
-header.dark .navnav > ul > li::after, body.transparent_header header:not(.sticky) .navnav > ul > li::after {background: white;}
+header.dark .navnav > ul > li > a, body.transparent_header header:not(.sticky) .navnav > ul > li > a {color: var(--colorTan);}
+header.dark .navnav > ul > li::after, body.transparent_header header:not(.sticky) .navnav > ul > li::after {background:  var(--colorTan);}
 body.mobilemenu header .navnav > ul > li.haschildren > a::after,
 header.dark .navnav > ul > li.haschildren > a::after, 
-body.transparent_header header:not(.sticky) .navnav > ul > li.haschildren > a::after {border-color: white;}
+body.transparent_header header:not(.sticky) .navnav > ul > li.haschildren > a::after {border-color:  var(--colorTan);}
 header.dark #togglemenu span,
 header.dark > .container.has_cta > div:nth-child(3) > a > img,
 body.transparent_header header:not(.sticky) > .container.has_cta > div:nth-child(3) > a > img,
-header.dark a.logo > div img.inline,
+header a.logo > div img.inline {
+    filter: none !important;
+    height: 3.5rem;
+}
+header:not(.dark) a.logo > div img.logo-light {
+    display: none;
+}
+
+
+header.dark a.logo > div img.inline {
+    filter: none !important;
+    height: 3.5rem;
+}
+header.dark a.logo > div img.logo-dark {
+    display: none;
+}
 body.transparent_header header:not(.sticky) #togglemenu span,
 body.transparent_header header:not(.sticky) a.logo > div img.inline {filter: invert(1)!important;}
 header.dark + section.bgimage,
@@ -178,11 +193,17 @@ footer select option:not([disabled]) {color: initial;}
 }
 
 footer.dark {background: var(--textDark);}
-footer.dark a.logo {color: white;}
+footer.dark a.logo {color:  var(--colorTan);}
 footer.dark > div:last-child {border-top: 1px solid rgba(255,255,255,0.1);}
 footer.dark select, footer.dark, footer.dark > div:last-child a, footer.dark ul li a {color: rgba(255,255,255,0.5);}
 footer.dark ul.buttons.social .button {background: var(--accent);}
-footer.dark a.logo img.inline {filter: invert(1)!important;}
+footer.dark a.logo img.inline {
+    filter: none !important;
+    height: 3.5rem;
+}
+footer.dark a.logo > div img.logo-dark {
+    display: none;
+}
 footer.dark ul li a:not(.button)::after {background: rgba(255,255,255,0.5);}
 
 /*------------------------*/

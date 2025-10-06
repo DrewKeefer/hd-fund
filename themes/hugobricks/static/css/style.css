@@ -55,47 +55,138 @@ img {filter: grayscale(0);}
 
 /*------------------------ CSS overrides below ------------------------*/
 
-/* Logo, Header, and Footer */
-
-a.logo > div img.inline{
-    height: 3.5rem;
-    filter: none !important;
-}
-
-body.transparent_header header:not(.sticky) a.logo > div img.inline{
-    filter: grayscale(100%) brightness(0) invert(1) !important;
-}
-
-header.dark a.logo > div img.inline{
-    filter: grayscale(100%) brightness(0) invert(1) !important;
-}
-
-footer.dark a.logo > div img.inline{
-    filter: grayscale(100%) brightness(0) invert(1) !important;
-}
+/* SITE WIDE */
 
 .innerbody{
     background: var(--colorTan);
 }
 
-header{
-    background: var(--colorTan);
+/* Buttons */
+
+.button:not(.icon){
+    border-radius: 3rem;
 }
 
-header.sticky:not(.dark) {
-    background: var(--colorTan);
+/* Title Block */
+
+section.title {
+    position: relative;
+    min-height: 40rem;
 }
 
-.tabs > li{
-    text-align: center;
-    width: 100%;
+section.title::after {
+  content: '';
+  position: absolute;
+  inset: 8rem clamp(1rem, 4vw, 3rem) 1rem clamp(1rem, 4vw, 3rem);
+  background-color: var(--accentDarker);
+  border-radius: 2rem;
+  z-index: 0;
 }
 
-ul.features img{
-    filter: none !important;
+section.title .container.small{
+    z-index: 1;
+    position: absolute;
+    color: var(--colorTan) !important;
+    text-align: start;
+    margin: 2.5rem;
+    top: 8rem;
+    max-width: 35rem;
 }
 
-/* Bracket Blocks */
+section.title .container.small :is(h1, h2, h3, h4){
+    color: var(--colorTan);
+    font-family: var(--fontTitles);
+
+}
+
+
+/* Column Text */
+
+.columnText{
+    container-type: inline-size;
+    padding-bottom: 0;
+}
+
+.columnText .container{
+    max-width: 100%;
+}
+
+.columnText .box{
+    background-color: transparent;
+    border: none;
+}
+
+.columnText .box img{
+    max-width: 75%;
+    border-radius: 2rem;
+}
+
+.columnText .left{
+    justify-content: start;
+}
+
+.columnText .right{
+    justify-content: center;
+}
+
+.columnText .column :is(h1, h2, h3, h4):nth-child(1){
+    padding-top: 0;
+}
+
+.columnText .twocols{
+    grid-template-columns: 1fr 2fr;
+}
+
+@container (width < 50rem) {
+    .columnText .twocols{
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    }
+
+    .columnText img{
+        display: none;
+    }
+}
+
+/* Posts */
+
+section.posts .container{
+    max-width: 100%;
+}
+
+section.posts .postTitle{
+    padding-bottom: 0;
+    padding-top: 0;
+}
+
+section.posts .contentitems{
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+/* Box override */
+
+.box{
+    padding: 3.5rem clamp(5rem, 5vw, 5rem);
+    border-radius: 2rem;
+    border: none;
+    background-color: transparent;
+}
+
+/* CTA */
+
+.cta .container{
+    max-width: 100%;
+}
+
+.cta .box{
+    background-color: var(--accentDarker);
+}
+
+.cta .text > div > *:not(.button){
+    color: var(--colorTan);
+}
+
+/* Bracket Blocks
 
 .bracketBlocks ul.blocks li.hasimage div.img{
     width: 100%;
@@ -137,7 +228,11 @@ ul.blocks li.hasimage h3{
     color: var(--colorDark)
 }
 
-/* Title Brackets */
+section.title {
+   background-color: #215e45;
+   border-radius: 20px;
+   margin: 25px;
+}
 
 section.title h1{
     position: relative;
@@ -161,35 +256,7 @@ body.mobilemenu section.title h1::before {
     display: none;
 }
 
-/* Subtitle Text */
-
 section.title .container h4{
     padding-top: 4rem;
     text-align: justify;
-}
-
-/* Intro Text */
-
-.introText {
-    background-color: var(--darkGreen);
-    color: var(--colorTan);
-    container-type: inline-size;
-}
-
-.introText .column{
-    justify-content: start;
-}
-
-.introText .twocols{
-    grid-template-columns: 1fr 2fr;
-}
-
-@container (width < 50rem) {
-    .introText .twocols{
-        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-    }
-}
-
-.introText h2{
-    color: var(--colorTan);
-}
+} */

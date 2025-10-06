@@ -8,17 +8,19 @@
 
 {{- $columns := split $inner "---" -}}
 
-<section class="image {{ $class }}" {{ if $id }}id="{{ $id }}"{{ end }}>
-    <div class="container twocols">
-        <div class="column left">
-            {{- if ge (len $columns) 1 -}}
-                {{- markdownify (index $columns 0) -}}
-            {{- end -}}
-        </div>
-        <div class="column right">
-            {{- if ge (len $columns) 2 -}}
-                {{- markdownify (index $columns 1) -}}
-            {{- end -}}
+<section class="columnText {{ $class }}" {{ if $id }}id="{{ $id }}"{{ end }}>
+    <div class="container">
+        <div class ="twocols box">
+            <div class="column left">
+                {{- if ge (len $columns) 1 -}}
+                    {{- markdownify (index $columns 0) -}}
+                {{- end -}}
+            </div>
+            <div class="column right">
+                {{- if ge (len $columns) 2 -}}
+                    {{- markdownify (index $columns 1) -}}
+                {{- end -}}
+            </div>
         </div>
     </div>
 </section>

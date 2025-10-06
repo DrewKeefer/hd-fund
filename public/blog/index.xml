@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Huntington&#39;s Disease Fund</title>
+    <link>https://huntingtonsdiseasefund.org/blog/</link>
+    <description>Recent content in Posts on Huntington&#39;s Disease Fund</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 06 Oct 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://huntingtonsdiseasefund.org/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Fourth Post</title>
+      <link>https://huntingtonsdiseasefund.org/blog/fourth-post/</link>
+      <pubDate>Mon, 06 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>https://huntingtonsdiseasefund.org/blog/fourth-post/</guid>
+      <description>&lt;p&gt;This is our fourth blog post, a local link&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Third Post</title>
+      <link>https://huntingtonsdiseasefund.org/blog/third-post/</link>
+      <pubDate>Sun, 05 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>https://huntingtonsdiseasefund.org/blog/third-post/</guid>
+      <description>&lt;p&gt;This is our third blog post, also an outside link&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Second Post</title>
+      <link>https://huntingtonsdiseasefund.org/blog/second-post/</link>
+      <pubDate>Sat, 04 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>https://huntingtonsdiseasefund.org/blog/second-post/</guid>
+      <description>&lt;p&gt;This is our second blog post, an outside link&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>First Post</title>
+      <link>https://huntingtonsdiseasefund.org/blog/first-post/</link>
+      <pubDate>Fri, 03 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>https://huntingtonsdiseasefund.org/blog/first-post/</guid>
+      <description>&lt;p&gt;This is our first blog post, which is posted on the site and a local link&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
