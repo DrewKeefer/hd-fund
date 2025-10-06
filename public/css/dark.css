@@ -223,7 +223,6 @@ section.posts .contentitems{
 /* Box override */
 
 .box{
-    padding: 3.5rem clamp(5rem, 5vw, 5rem);
     border-radius: 2rem;
     border: none;
     background-color: transparent;

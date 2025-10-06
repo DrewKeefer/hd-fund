@@ -159,6 +159,7 @@ header.dark a.logo > div img.inline {
 header.dark a.logo > div img.logo-dark {
     display: none;
 }
+
 body.transparent_header header:not(.sticky) #togglemenu span,
 body.transparent_header header:not(.sticky) a.logo > div img.inline {filter: invert(1)!important;}
 header.dark + section.bgimage,
@@ -228,6 +229,10 @@ footer.dark ul li a:not(.button)::after {background: rgba(255,255,255,0.5);}
 }
 #togglemenu span {display: block; width: 100%; height: 100%; background: transparent url(../img/menu.svg) center center / 2rem auto no-repeat;}
 body.mobilemenu #togglemenu {display: block;}
+body.mobilemenu header.dark #togglemenu {
+    display: block;
+    filter: invert(1);
+}
 body.mobilemenu header.sticky + #togglemenu {position: fixed; top: 0.75rem; margin-top: 0;}
 body.mobilemenu header .nav {display: grid; transition: grid-template-rows 0.3s ease-in-out;}
 body.mobilemenu header > div.container {display: grid; grid-template-areas: "logo cta" "menu menu";}
@@ -278,7 +283,7 @@ body.mobilemenu header .navnav > ul > li > ul li a {padding: 0.5rem 2rem 0.5rem 
 
 body.mobilemenu.menushown header > div.container > div.nav {transform: translateX(0%); box-shadow: 0 0 0.5rem rgba(0,0,0,0.3);}
 body.mobilemenu.menushown header > div.container::before {content: ""; position: fixed; left: 0; top: 0; width: 100%; height: 100%; z-index: 2;}
-body.mobilemenu.menushown header .navnav > ul > li a {color: white;}
+body.mobilemenu.menushown header .navnav > ul > li a {color: var(--colorTan);}
 
 @media (max-width: 450px) {
     header .button {display: none;}
