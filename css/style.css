@@ -150,6 +150,7 @@ section.title .container.small :is(h1, h2, h3, h4){
 /* Posts */
 
 section.posts .container{
+    container-type: inline-size;
     max-width: 100%;
 }
 
@@ -162,11 +163,17 @@ section.posts .contentitems{
     grid-template-columns: 1fr 1fr 1fr;
 }
 
+@container (width < 50rem) {
+    section.posts .contentitems{
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    }
+
+}
+
 
 /* Box override */
 
 .box{
-    padding: 3.5rem clamp(5rem, 5vw, 5rem);
     border-radius: 2rem;
     border: none;
     background-color: transparent;
