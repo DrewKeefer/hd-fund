@@ -5,28 +5,35 @@ color_name: dark
 ---
 {{< brick_title >}}
 
-## Our strategy
+## Our approach
 
-#### This fund will be managed and governed by experts with experience -- people who have been directly impacted by Huntington's Disease.
+#### We want our work, and the way we do it, to reflect the kind of change we hope to see. We believe in the power of organising for change.
 
 
 {{< /brick_title>}}
 
 {{< brick_features>}}
 
-## Your donation will be channelled into two vital areas:
+## Your donation will be channelled into three vital areas:
 
 ---
 #### 1
-### Financial Access
+### A movement of people that care about Huntington’s Disease. 
 
-When, not if, a cure becomes publicly available, it won't come cheap. For families already burdened with the financial strain of care, loss, and medical costs, the price of a lifesaving treament could be out of reach. We will make sure they are not priced out of hope.
+For too long the burden of fundraising and advocacy has been on the shoulders of a community that already holds too much. We are building a movement of people that will fight for the cure alongside us. The hope? That when we have to fight for the cure of Huntington’s Disease to be available to all, we have a worldwide movement of people behind us. 
 
 ---
 #### 2
-### Supporting Research
+### A fund to financially support families.
 
-A cure may be on the horizon, but the journey from discover to delivery is long and expensive. We will invest in continued research to speed up access to safe, effective treatments, and ultimately, a cure that reaches the people who needs it most. 
+Access to medical care is the foundation of our work. We believe that everyone should have access to medication, no matter their income. We are building a funding pot that individuals can access when in need. 
+
+---
+#### 3
+### A space for activism, organizing, and mobilisation. 
+
+We want to continue to build the platform to share stories of families, individuals, and organisations that are working tirelessly to fight HD. Our stories are important, and they are too often lost in the weight and continual loss of Huntington’s Disease. We want to work alongside partner organisations already doing the vital work and to share the HD story to all. 
+
 
 {{< /brick_features>}}
 

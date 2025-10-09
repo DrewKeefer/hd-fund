@@ -1,12 +1,11 @@
 logo_image:
 light_logo: /uploads/branding/light_square_logo.svg
+dark_logo: /uploads/branding/square_logo.svg
 menuitems:
   - title: About
     link:  /about/
   - title: Contact
     link:  /contact/
-  - title: Privacy policy
-    link:  /privacy-policy/
 socials:
   - title: Facebook
     link: https://facebook.com
@@ -17,4 +16,4 @@ socials:
   - title: Instagram
     link: https://instagram.com
     logo_image: /img/instagram.svg
-footer_text: "Bottom Text"
+footer_text: 

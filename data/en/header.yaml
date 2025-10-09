@@ -1,5 +1,6 @@
 logo_image:
 light_logo: /uploads/branding/light_square_logo.svg
+dark_logo: /uploads/branding/square_logo.svg
 logo_subtitle:
 dark_header: false
 mobile_view_width: 1100
@@ -15,5 +16,5 @@ menuitems:
 cta:
   active: true
   title: Donate
-  link: /donate/
-preheader: open Mon-Fri from 9-5
+  link: https://www.gofundme.com/f/fund-the-cure-for-huntingtons-disease
+preheader: 

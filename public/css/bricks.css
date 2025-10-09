@@ -36,7 +36,7 @@ section.post .container .meta {justify-content: center; margin-bottom: 3rem; mar
 
 section.cta .twocols {display: flex;}
 section.cta .twocols .text {flex: 2;}
-section.cta .twocols .image {flex: 1;}
+section.cta .twocols .image {flex: 1; align-items: end;}
 section.cta .twocols .image img {display: inline-block; width: 20rem;}
 section.cta .twocols .image img.is_svg {margin: 0!important;}
 @media (max-width: 600px) {

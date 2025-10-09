@@ -464,3 +464,165 @@ details[open]:not(.closing) summary::after {
 .meta ul li::before {content: ","; margin-right: 0.4rem;}
 .meta ul li:first-child:before {content: none;}
 
+/* multiple pages overrides */
+
+/* Posts */
+
+section.posts .container{
+    container-type: inline-size;
+    max-width: 100%;
+}
+
+section.posts .postTitle{
+    padding-bottom: 0;
+    padding-top: 0;
+}
+
+section.posts .contentitems{
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+@container (width < 50rem) {
+    section.posts .contentitems{
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    }
+
+    section.posts .grid .item .img{
+        max-width: 20rem;
+    }
+}
+
+
+/* Column Text */
+
+.columnText{
+    container-type: inline-size;
+    padding-bottom: 0;
+}
+
+.columnText .container{
+    max-width: 100%;
+}
+
+.columnText .box{
+    background-color: transparent;
+    border: none;
+}
+
+.columnText .box img{
+    max-width: 75%;
+    border-radius: 2rem;
+}
+
+.columnText .left{
+    justify-content: start;
+}
+
+.columnText .right{
+    justify-content: center;
+}
+
+.columnText .column :is(h1, h2, h3, h4):nth-child(1){
+    padding-top: 0;
+}
+
+.columnText .twocols{
+    grid-template-columns: 1fr 2fr;
+}
+
+@container (width < 50rem) {
+    .columnText .twocols{
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    }
+
+    .columnText img{
+        display: none;
+    }
+}
+
+
+/* Box override */
+
+.box{
+    border-radius: 2rem;
+    border: none;
+    background-color: transparent;
+}
+
+/* Buttons */
+
+.button:not(.icon){
+    border-radius: 3rem;
+}
+
+/* CTA */
+
+.cta .container{
+    max-width: 100%;
+}
+
+/* Features */
+
+.features .container.small{
+    text-align: start !important;
+    margin: 2.5rem;
+}
+
+.features .container.small > *{
+    color: var(--colorTan)
+}
+
+.features .container{
+    container-type: inline-size;
+    margin: 2.5rem;
+    max-width: none;
+}
+
+.grid.features {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+@container (width < 50rem) {
+    .grid.features{
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    }
+}
+
+.grid.features > * {
+    text-align: start;
+    background-color: var(--colorTan);
+    border-radius: 2rem;
+    padding: 3.5rem clamp(2.5rem, 5vw, 2.5rem);    
+}
+
+.grid.features > * > h4{
+    font-family: var(--fontTitles);
+    color: var(--colorTan);
+    padding-top: 0;
+    aspect-ratio: 1;
+    width: fit-content;
+    min-width: 2.5rem; /* ensures it's wide enough */
+    border-radius: 50%;
+    background-color: var(--accent);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.grid.features > * > h3{
+    font-family: var(--fontTitles);
+}
+
+/* Wide Brick */
+
+section.wide {
+    max-width: 100% !important;
+    padding: 0rem clamp(1rem,4vw,3rem);
+}
+
+section.wide .container{
+    max-width: 100%;
+    padding: 3.5rem clamp(3rem, 5vw, 5rem);
+    border-radius: 2rem;
+}
