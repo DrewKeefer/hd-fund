@@ -61,12 +61,6 @@ img {filter: grayscale(0);}
     background: var(--colorTan);
 }
 
-/* Buttons */
-
-.button:not(.icon){
-    border-radius: 3rem;
-}
-
 /* Title Block */
 
 section.title {
@@ -81,6 +75,17 @@ section.title::after {
   background-color: var(--accentDarker);
   border-radius: 2rem;
   z-index: 0;
+}
+
+body:not(.mobilemenu) .innerbody section.title::before{
+    content: '';
+    position: absolute;
+    inset: 8rem clamp(1rem, 4vw, 3rem) 1rem 50%;
+    background-image: url("/uploads/branding/tile_tan.svg");
+    background-position: right;
+    background-repeat: no-repeat;
+    border-radius: 2rem;
+    z-index: 1;
 }
 
 section.title .container.small{
@@ -99,92 +104,6 @@ section.title .container.small :is(h1, h2, h3, h4){
 
 }
 
-
-/* Column Text */
-
-.columnText{
-    container-type: inline-size;
-    padding-bottom: 0;
-}
-
-.columnText .container{
-    max-width: 100%;
-}
-
-.columnText .box{
-    background-color: transparent;
-    border: none;
-}
-
-.columnText .box img{
-    max-width: 75%;
-    border-radius: 2rem;
-}
-
-.columnText .left{
-    justify-content: start;
-}
-
-.columnText .right{
-    justify-content: center;
-}
-
-.columnText .column :is(h1, h2, h3, h4):nth-child(1){
-    padding-top: 0;
-}
-
-.columnText .twocols{
-    grid-template-columns: 1fr 2fr;
-}
-
-@container (width < 50rem) {
-    .columnText .twocols{
-        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-    }
-
-    .columnText img{
-        display: none;
-    }
-}
-
-/* Posts */
-
-section.posts .container{
-    container-type: inline-size;
-    max-width: 100%;
-}
-
-section.posts .postTitle{
-    padding-bottom: 0;
-    padding-top: 0;
-}
-
-section.posts .contentitems{
-    grid-template-columns: 1fr 1fr 1fr;
-}
-
-@container (width < 50rem) {
-    section.posts .contentitems{
-        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-    }
-
-}
-
-
-/* Box override */
-
-.box{
-    border-radius: 2rem;
-    border: none;
-    background-color: transparent;
-}
-
-/* CTA */
-
-.cta .container{
-    max-width: 100%;
-}
-
 .cta .box{
     background-color: var(--accentDarker);
 }
@@ -193,77 +112,58 @@ section.posts .contentitems{
     color: var(--colorTan);
 }
 
-/* Bracket Blocks
+/* Strategy Text */ 
 
-.bracketBlocks ul.blocks li.hasimage div.img{
-    width: 100%;
-    border-radius: 0rem;;
+.strategyText .right > *{
+    font-weight: normal;
 }
 
-ul.blocks li.hasimage div.img img{
-    object-fit: none;
+/* Aims text */
+
+.aimsText .right > * {
+    font-size: 1.25rem;
 }
 
-ul.blocks li.hasimage a::before{
-    background: transparent;
+/* Brick Wide Alt */
+
+section.wide_alt .container{
+    background-color: var(--accentDarker);
 }
 
-ul.blocks a[href]:hover .img img {transform: scale(0.75);}
-
-ul.blocks li.hasimage:hover{
-    border: 0px;
+section.wide_alt .container > * {
+    color: var(--colorTan)
 }
 
-ul.blocks li:has(a[href]):hover {border: 0px;}
 
-ul.blocks li a::after {
-    content: "";
-    width: 40%;
-    background: var(--colorYellow);
-    height: 0.25rem;
-    position: absolute;
-    left: 30%;
-    bottom: 42.5%;
-    transform: scaleX(0) translateY(40%);
-    transition: transform 0.2s ease-in-out;
+/* Features */
+
+.features .container.small > *{
+    color: var(--textDarker)
 }
 
-ul.blocks li a:hover::after,
-ul.blocks li.selected a::after {transform: scaleX(1) translateY(50%);}
-
-ul.blocks li.hasimage h3{
-    color: var(--colorDark)
+.grid.features > * {
+    background-color: var(--accentDarker);
+    color: var(--colorTan);
 }
 
-section.title {
-   background-color: #215e45;
-   border-radius: 20px;
-   margin: 25px;
+.grid.features > :last-child:empty{
+    background-image: url("/uploads/branding/tile_green.svg");
+    background-size: contain;
+    background-position: center;
+    background-color: transparent;
+    background-repeat: repeat-y;
 }
 
-section.title h1{
-    position: relative;
+@container (width < 50rem) {
+    .grid.features > :last-child:empty{
+        display: none;
+    }
 }
 
-section.title h1::before{
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    content: "";
-    width: 150%;
-    height: 150%;
-    position: absolute;
-    z-index: 10;
-    background-image: url('../uploads/branding/left_brace.svg'), url('../uploads/branding/right_brace.svg');
-    background-position: left center, right center;
-    background-repeat: no-repeat, no-repeat;
-}
+/* Contact Box */
 
-body.mobilemenu section.title h1::before {
-    display: none;
+section.contact .container .box{
+    border: 0.1rem solid var(--accentDarker);
+    border-radius: 2rem;
+    box-shadow: inset 8rem;
 }
-
-section.title .container h4{
-    padding-top: 4rem;
-    text-align: justify;
-} */
