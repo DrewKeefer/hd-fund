@@ -118,23 +118,27 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: github-pages
-          path: public
+          path: ./public
 
       - name: Commit public folder to gh-pages
         run: |
           git config user.name "drewkeefer"
-          git config user.email "workflow@users.noreply.github.com"
-          
-          # Create or switch to gh-pages branch
-          git fetch origin gh-pages || true
-          git checkout gh-pages || git checkout --orphan gh-pages
-          
+          git config user.email "drewkeefer@example.com"
+
+          # Switch to gh-pages branch, or create it if it doesn't exist
+          if git ls-remote --exit-code --heads origin gh-pages; then
+            git checkout gh-pages
+          else
+            git checkout --orphan gh-pages
+            git rm -rf .
+          fi
+
           # Copy public contents into branch root
-          rsync -a --delete public/ ./
-          
+          cp -a public/. ./
+
           # Commit changes
           git add -A
           git commit -m "Update public folder [skip ci]" || echo "No changes to commit"
-          
-          # Push to gh-pages
+
+          # Push to remote
           git push origin gh-pages --force
