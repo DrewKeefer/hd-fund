@@ -5,31 +5,10 @@ title: Home
 
 ## Because everyone deserves the chance to live.
 
-#### We are building a movement powered by action, and the belief that we can create a future without this disease.
+#### We are building a movement powered by action, and the belief that we can create a future without Huntington's Disease.
 
 
 {{< /brick_title>}}
-
-
-{{< brick_columntext class="strategyText">}}
-
-## Our Strategy
-
----
-
-### In September 2025, Huntington’s Disease hit international headlines. A “cure” had been discovered – or at least, the most exciting scientific breakthrough we had ever seen. For the first time, millions of people were talking about Huntington’s Disease. 
-
-### For the first time, people outside of the HD community are paying attention. 
-
-### We want to hold this attention. <b>Ride this wave</b> and <b>build an HD Movement, together.</b>
-
-###
-
-{{< button "Read more" "/strategy/" >}}
-
-{{< /brick_columntext >}}
-
-{{< brick_cta color="tan">}}{{< /brick_cta >}}
 
 {{< brick_columntext class="aimsText">}}
 
@@ -39,11 +18,14 @@ title: Home
 
 <b>Raising Awareness and Advocacy</b> is an essential part of medical research. The more people that care about Huntington’s Disease, the better chance we have of approving medication that can help save lives. By supporting our work, you are joining the HD movement–showing solidarity to thousands of families that have been fighting this fight alone for generations. 
 
----
+{{< button "Read more" "/strategy/" >}}
 
 {{< /brick_columntext >}}
 
-{{< brick_wide2 >}}
+
+{{< brick_cta color="tan">}}{{< /brick_cta >}}
+
+{{< brick_wide >}}
 
 ## Can't donate? Support in other ways:
 
@@ -57,7 +39,7 @@ title: Home
 
 5. Not sure how to help but want to support? [Get in touch](/contact/) with our team.
 
-{{< /brick_wide2 >}}
+{{< /brick_wide >}}
 
 {{< brick_posts >}}
 

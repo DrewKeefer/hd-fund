@@ -10,9 +10,22 @@
     <link rel="shortcut icon" href="{{ .Site.Data.settings.favicon_image }}">
     
     {{- $color := "style" -}}
-    {{- if .Params.color_name -}}{{- $color = .Params.color_name -}}{{- end -}}
-    {{- if .Site.Data.settings.color_name -}}{{- $color = .Site.Data.settings.color_name -}}{{- end -}}
-    <link href="/css/{{ $color }}.css?version={{ now }}" rel="stylesheet">
+    {{- if .Params.color_name -}}
+      {{- $color = .Params.color_name -}}
+    {{- end -}}
+    {{- if .Site.Data.settings.color_name -}}
+      {{- $color = .Site.Data.settings.color_name -}}
+    {{- end -}}
+
+    {{ $css := resources.Match "css/*.css"}}
+    {{ range $css }}
+      {{ $styles := . | minify | fingerprint }}
+      <link href="{{ $styles.Permalink}}" rel="stylesheet">
+    {{ end }}
+
+    {{ $style_css := resources.Get (printf "css/variations/%s.css" $color)}}
+    {{ $page_css := $style_css | minify | fingerprint}}
+    <link href="{{ $page_css.Permalink}}" rel="stylesheet">
 
   </head>
   <body id="top" class="{{ if in (substr .Content  0 100) `transparent_header` }}transparent_header{{ end }} filename_{{ with .File }}{{ .BaseFileName }}{{ end }}">
@@ -157,14 +170,12 @@
     {{ end }}
     <script type="text/javascript" src="/js/faq.js"></script>
     <script type="text/javascript" src="/js/lightbox.js"></script>
-		<link rel="stylesheet" href="/css/lightbox.css">
     {{ if .Site.Data.settings.customcursor }}
       <script type="text/javascript" src="/js/customcursor.js"></script>
       <link rel="stylesheet" href="/css/customcursor.css">
     {{ end }}
     {{ if .Site.Data.settings.intersectionobserver }}
       <script type="text/javascript" src="/js/intersectionobserver.js"></script>
-      <link rel="stylesheet" href="/css/intersectionobserver.css">
     {{ end }}
     {{- if (index .Site.Data .Language.Lang).webshop.show_cart_icon -}}
     <script type="text/javascript" src="/js/webshop.js"></script>

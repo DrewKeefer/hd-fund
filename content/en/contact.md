@@ -11,6 +11,8 @@ title: Contact
 
 ## Not sure how to help but want to support? Get in touch with our team.
 
+contact@huntingtonsdisease-fund.org
+
 {{< socialbuttons >}}
 
 {{< /brick_wide >}}

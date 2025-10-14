@@ -12,6 +12,21 @@ color_name: dark
 
 {{< /brick_title>}}
 
+{{< brick_image2>}}
+![](/uploads/branding/tile_tan.svg)
+
+In September 2025, a [groundbreaking gene therapy](https://en.hdbuzz.net/the-first-domino-falls-amt-130-gene-therapy-slows-huntingtons-in-landmark-trial/) brought new hope to the [Huntington’s disease (HD) community](https://www.theguardian.com/science/2025/sep/24/huntingtons-disease-treated-successfully-for-first-time-in-gene-therapy-trial?utm_), showing that it’s possible to slow the disease’s devastating effects. After years of setbacks, families and patients finally have reason to believe that real progress is being made. 
+
+<b>For the first time in history</b>, people outside of the HD community are paying attention. We want to hold this attention. 
+
+We are building a movement of people who believe access to medical treatment is a basic human right, and pooling a funding pot to allow this to happen. 
+
+### Join the HD movement today.
+
+
+
+{{< /brick_image2 >}}
+
 {{< brick_features>}}
 
 ## Your donation will be channelled into three vital areas:
